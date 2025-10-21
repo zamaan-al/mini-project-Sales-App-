@@ -4,9 +4,14 @@ import Home from "./pages/Home";
 
 import { Toaster } from "react-hot-toast";
 import Header from "./components/Header";
-import SalesPost from "./pages/salesPost";
-import Sales from "./pages/Sales";
-import UpdateSale from "./pages/UpdateSale";
+
+
+import Sales from "./pages/Students";
+
+
+import StudentPost from "./pages/StudentPost";
+import UpdateStudent from "./pages/UpdateStudent";
+import Students from "./pages/Students";
 
 
 
@@ -20,9 +25,10 @@ function App() {
            
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/post-sales" element={<SalesPost/>} />
-                <Route path="/sales" element={<Sales />} />
-                <Route path="/updateSale" element={<UpdateSale/>} />
+                <Route path="/post-student" element={<StudentPost/>} />
+
+                <Route path="/students" element={<Students />} />
+                <Route path="/updateStudent" element={<UpdateStudent/>} />
             </Routes>
         </>
     );

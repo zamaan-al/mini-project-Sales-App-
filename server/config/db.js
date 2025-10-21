@@ -7,7 +7,7 @@ const connectDB = () => {
             console.log(`DB connected`);
         })
         .catch((err) => {
-            console.log(err);
+            console.log(err.message);
         });
 };
 
